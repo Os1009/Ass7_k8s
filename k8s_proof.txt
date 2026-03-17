@@ -1,0 +1,34 @@
+--- Task 1: nodeName Pod ---
+NAME            READY   STATUS    RESTARTS   AGE   IP             NODE       NOMINATED NODE   READINESS GATES
+static-pinned   1/1     Running   0          86s   10.244.0.190   minikube   <none>           <none>
+
+--- Task 2: NodeSelector & Pending Status ---
+NAME            READY   STATUS    RESTARTS   AGE   IP             NODE       NOMINATED NODE   READINESS GATES
+selector-demo   1/1     Running   0          62s   10.244.0.191   minikube   <none>           <none>
+NAME               READY   STATUS    RESTARTS   AGE
+pending-selector   0/1     Pending   0          26s
+
+--- Task 3: NoExecute Eviction Proof ---
+
+--- Task 5: QoS Classes Verification ---
+admin-78f66479f9-d8zlp               BestEffort
+affinity-demo                        BestEffort
+api-78f5db7b6-qrr84                  BestEffort
+besteffort-pod                       BestEffort
+burstable-pod                        Burstable
+demo-7fb87548c-qpbx4                 BestEffort
+demo-7fb87548c-sf94l                 BestEffort
+guaranteed-pod                       Guaranteed
+pending-selector                     BestEffort
+web-0                                BestEffort
+web-1                                BestEffort
+web-2                                BestEffort
+webapp-6647dcbc7c-hpcvd              BestEffort
+webapp-configured-64dd9d5f86-dgj9x   BestEffort
+webapp-configured-64dd9d5f86-sclmh   BestEffort
+webapp-configured-64dd9d5f86-wqb8n   BestEffort
+
+--- Task 7: Static Pod Proof ---
+
+--- Task 7: Static Pod Proof ---
+static-nginx-minikube not found after removing manifest file
